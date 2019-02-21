@@ -1,12 +1,14 @@
 # High-End USB 3 HUB
 
-<center>
-Dynamix保留本作品所有权利.
-</center>
-
-<center>ALL RIGHTS RESERVED by DYNAMIX.
-<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</center>
-
+Dynamix保留本作品所有权利  <br />
+ALL RIGHTS RESERVED by DYNAMIX.
+  <br />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  <br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+  <br />
+<img src="https://github.com/DynamixYANG/highendusb3hub/blob/master/pic/JPEG/IMG_0923.jpg" />
+  <br />
 本设计是一款符合 USB 3.0 要求的，兼具有5V快速充电特性的一款超高速分线器。本设计从原理，布线，采购，制造均有本人亲自把关，用料考究，稳定性强。本人尊崇开源的思想，希望通过这样一个简单的设计，抛砖引玉，让国内的爱好者们在分享中学习，在学习中交流。这仅仅是个开始，我会在接下来的业余生活中带给大家更多更好的作品。
 
 本设计经过两次迭代实物验证，除厂商不对外开放的OTP功能外完全实现TUSB8041其余各项功能。其功能主要包括：
@@ -21,6 +23,11 @@ Dynamix保留本作品所有权利.
 8. 下行四个端口采用独立限流开关控制，当任意一个下行端口输出电流超过 2A 时，PC端将会收到下游端口过流通知并可手动复位；
 9. 主芯片TUSB8041 pin-to-pin 兼容TUSB8041A，经过验证可以实现 USB 3.1 Gen1 标准。
 
+
+<img src="https://github.com/DynamixYANG/highendusb3hub/blob/master/pic/JPEG/2019-02-21_172853.png" />
+
+
+<img src="https://github.com/DynamixYANG/highendusb3hub/blob/master/pic/JPEG/2019-02-21_180051.png" />
 本设计使用 Altium Designer 绘制原理图文件和 PCB 文件。PCB 经过样品生产后，手工焊接并调试。调试测试电压，电流，时钟频率等参数，并针对限流，过流，警告，快充等特性单独测试。同时，粗略对比高速 SSD 移动硬盘在大文件传输过程中直接连接 PC 与经过 HUB 连接 PC 时速度的变化，结果传输速度无明显差别**。
 
 设计中根据 PCB 样品生产材料规格，使用 Si9000 计算差分阻抗。在 Layout 过程中，使用差分对工具布线，进行等长处理，使用 Shield 工具保护差分线，以获得最好的信号完整性。由于身边没有 TDR 和 VNA 等设备，无法进行详细测试。
